@@ -19,7 +19,10 @@
 
     <main>
       <div class="search">
-        <h1 id="searchTitle">Type a username below <br> to search 👇</h1>
+        <h1 id="searchTitle">
+          Type a username below <br />
+          to search 👇
+        </h1>
         <div class="search-input">
           <input
             type="text"
@@ -28,21 +31,29 @@
             placeholder="Type here..."
             required
           />
-          <button class="search-button" id="search" onclick="searchUser()">Search</button>
+          <button
+            class="search-button"
+            id="search"
+            type="submit"
+            onclick="searchUser()"
+          >
+            Search
+          </button>
+
           <img
             src="./assets/images/replay_white.svg"
             id="refresh"
-            alt="replay-icon" onclick="resetField()"
+            alt="replay-icon"
+            onclick="resetField()"
           />
         </div>
       </div>
       <div class="cards">
         <div class="card-info">
-          <img
-            id="avatar"
-            src="./assets/images/github-logo.svg"
-            alt="user image"
-          />
+          <span id="avatar">
+            <img class="avatar" src="./assets/images/github-logo.svg" />
+          </span>
+
           <ul id="user-info">
             <li id="name">Search for a username</li>
             <li class="username" id="username">@username</li>
@@ -52,15 +63,14 @@
 
         <div class="card-repo">
           <h3 id="repo-title">
-            Take a look at all repositories from
+            Take a look at
+            <span class="username" id="public_repos"></span> repositories from
             <span class="username" id="username2">@username</span>
           </h3>
-          <div class="repositories">
-            <div class="repo" id="userRepo">
-              <a href="#">repository_name</a>
-            </div>
+          <!-- <div id="userRepo">
 
-          </div>
+          </div> -->
+          <div class="repositories" id="userRepo"></div>
         </div>
       </div>
     </main>
