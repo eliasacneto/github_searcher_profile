@@ -44,6 +44,7 @@ nav img{
 #searchTitle{
   color: #FFF;
   font-size: 20px;
+  text-align: center;
 }
 
 .search-input{
@@ -56,11 +57,27 @@ nav img{
   width: 250px;
   padding-left: 15px;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-right: 10px;
   background-color: #D9D9D9;
 }
+.search-button{
+color: #FFF;
+background-color: #FF7c17;
+width: 80px;
+height: 35px;
+border: none;
+border-radius: 10px;
+align-items: center;
+font-size: 16px; 
+margin-right: 10px;
+cursor: pointer;
+}
 
+.search-button:hover{
+  background-color: #ff8a31;
+  box-shadow: rgba(202, 202, 208, 0.2) 0px 7px 29px 0px;
+}
 
 #refresh{
   cursor: pointer;
@@ -173,4 +190,7 @@ footer a{
   color: #FF7c17;
   text-decoration: none;
   font-weight: bold;
+}
+footer a:hover{
+  color: #ff8a31;
 }
