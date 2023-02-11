@@ -25,6 +25,7 @@
         </h1>
         <div class="search-input">
           <input
+            class="success"
             type="text"
             id="usernameInput"
             name="username"
@@ -47,7 +48,11 @@
             onclick="resetField()"
           />
         </div>
+
+
       </div>
+
+
       <div class="cards">
         <div class="card-info">
           <span id="avatar">
@@ -56,9 +61,13 @@
 
           <ul id="user-info">
             <li id="name">Search for a username</li>
-            <li class="username" id="username">@username</li>
-            <li id="bio">Then you can read the <u>Bio</u></li>
+            <li class="username" id="username">at input field above and</li>
+            <li id="bio">then you can read the Bio.</li>
           </ul>
+          <div class="follow">
+            <p><span class="username" id="followers">0</span> followers</p>
+            <p><span class="username" id="following">0</span> following</p>
+          </div>
         </div>
 
         <div class="card-repo">

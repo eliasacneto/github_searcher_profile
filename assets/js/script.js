@@ -11,7 +11,7 @@ function searchUser() {
   let user = document.getElementById("usernameInput").value;
 
   if(user === ''){
-    alert("Insert an user on InputField")
+      document.getElementsByName('username')[0].placeholder='You need to type an username first...';
   } else {
     let url = `https://api.github.com/users/${user}`;
 
@@ -27,6 +27,8 @@ function searchUser() {
     let bio = document.getElementById("bio");
     let username = document.getElementById("username");
     let username2 = document.getElementById("username2");
+    let followers = document.getElementById("followers");
+    let following = document.getElementById("following");
 
     avatar.innerHTML = `<img class="avatar" src="${data.avatar_url}" width="150px" />`;
     name.innerHTML = `<b>${data.name}</b>`;
@@ -34,6 +36,9 @@ function searchUser() {
     public_repos.innerHTML = data.public_repos;
     username.innerHTML = "@" + data.login;
     username2.innerHTML = "@" + data.login;
+    followers.innerHTML = data.followers;
+    following.innerHTML = data.following;
+
   });
 
 repos();
