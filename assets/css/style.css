@@ -114,7 +114,6 @@ input .success{
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   padding: 10px 30px 15px 30px;
   border-radius: 25px;
-  margin-bottom: 50px;
 }
 
 .avatar {
@@ -128,6 +127,12 @@ input .success{
 }
 .card-info ul li {
   margin: 15px;
+}
+
+#bio{
+  width: 15em;
+  word-wrap: break-word;
+
 }
 
 .username {
