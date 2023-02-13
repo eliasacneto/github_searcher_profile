@@ -1,6 +1,6 @@
 var input = document.getElementById("usernameInput");
 
-input.addEventListener("keypress", function(event) {
+input.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     document.getElementById("search").click();
@@ -10,41 +10,39 @@ input.addEventListener("keypress", function(event) {
 function searchUser() {
   let user = document.getElementById("usernameInput").value;
 
-  if(user === ''){
-      document.getElementsByName('username')[0].placeholder='Ops! Type an username first...';
+  if (user === "") {
+    document.getElementsByName("username")[0].placeholder =
+      "Ops! Type an username first...";
   } else {
     let url = `https://api.github.com/users/${user}`;
 
-    
-  fetch(url)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    let avatar = document.getElementById("avatar");
-    let name = document.getElementById("name");
-    let public_repos = document.getElementById("public_repos");
-    let bio = document.getElementById("bio");
-    let username = document.getElementById("username");
-    let username2 = document.getElementById("username2");
-    let followers = document.getElementById("followers");
-    let following = document.getElementById("following");
+    fetch(url)
+      .then(function (response) {
+        return response.json();
+      })
 
-    avatar.innerHTML = `<img class="avatar" src="${data.avatar_url}" width="150px" />`;
-    name.innerHTML = `<b>${data.name}</b>`;
-    bio.innerHTML = data.bio;
-    public_repos.innerHTML = data.public_repos;
-    username.innerHTML = "@" + data.login;
-    username2.innerHTML = "@" + data.login;
-    followers.innerHTML = data.followers;
-    following.innerHTML = data.following;
+      .then(function (data) {
+        let avatar = document.getElementById("avatar");
+        let name = document.getElementById("name");
+        let public_repos = document.getElementById("public_repos");
+        let bio = document.getElementById("bio");
+        let username = document.getElementById("username");
+        let username2 = document.getElementById("username2");
+        let followers = document.getElementById("followers");
+        let following = document.getElementById("following");
 
-  });
+        avatar.innerHTML = `<img class="avatar" src="${data.avatar_url}" width="150px" />`;
+        name.innerHTML = `<b>${data.name}</b>`;
+        bio.innerHTML = data.bio;
+        public_repos.innerHTML = data.public_repos;
+        username.innerHTML = "@" + data.login;
+        username2.innerHTML = "@" + data.login;
+        followers.innerHTML = data.followers;
+        following.innerHTML = data.following;
+      });
 
-repos();
+    repos();
   }
-
-
 }
 
 function resetField() {
@@ -61,7 +59,7 @@ function repos() {
       return responseR.json();
     })
     .then(function (dataR) {
-      clearRepo()
+      clearRepo();
       let userRepo = document.getElementById("userRepo");
 
       for (i = 0; i < dataR.length; i++) {
@@ -70,8 +68,6 @@ function repos() {
     });
 }
 
-function clearRepo(){
+function clearRepo() {
   document.getElementById("userRepo").innerHTML = "";
-
-  
 }
