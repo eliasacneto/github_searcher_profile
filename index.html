@@ -32,12 +32,14 @@
         to search 👇
       </h1>
       <div class="search-input">
-        <input class="success" type="text" id="usernameInput" name="username" placeholder="Type here..." required />
-        <button class="search-button" id="search" type="submit" onclick="searchUser()">
-          Search
-        </button>
-
-        <img src="./assets/images/replay_white.svg" id="refresh" alt="replay-icon" onclick="resetField()" />
+        <input class="success" type="text" id="usernameInput" name="username" placeholder="Type an username here..." required />
+        <div class="control-buttons">
+          <button class="search-button" id="search" type="submit" onclick="searchUser()">
+            Search
+          </button>
+  
+          <img src="./assets/images/replay_white.svg" id="refresh" alt="replay-icon" onclick="resetField()" />
+        </div>
       </div>
     </div>
 
