@@ -11,7 +11,7 @@ function searchUser() {
   let user = document.getElementById("usernameInput").value;
 
   if(user === ''){
-      document.getElementsByName('username')[0].placeholder='You need to type an username first...';
+      document.getElementsByName('username')[0].placeholder='Ops! Type an username first...';
   } else {
     let url = `https://api.github.com/users/${user}`;
 
