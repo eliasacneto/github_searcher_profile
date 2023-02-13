@@ -35,10 +35,12 @@ function searchUser() {
         name.innerHTML = `<b>${data.name}</b>`;
         bio.innerHTML = data.bio;
         public_repos.innerHTML = data.public_repos;
-        username.innerHTML = "@" + data.login;
-        username2.innerHTML = "@" + data.login;
+        username.innerHTML = `<a class="username" href="https://github.com/${data.login}" target="_blank"> @${data.login}</a>`;
+        username2.innerHTML = `<a class="username" href="https://github.com/${data.login}" target="_blank"> @${data.login}</a>`;
         followers.innerHTML = data.followers;
         following.innerHTML = data.following;
+
+
       });
 
     repos();

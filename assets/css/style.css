@@ -16,6 +16,8 @@ nav {
   align-items: center;
   justify-content: center;
   height: 70px;
+
+width: 100%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 26px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -33,7 +35,6 @@ nav img {
 main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 /* Search section*/
 .search {
@@ -139,7 +140,22 @@ input .success{
   color: #ff7c17;
   font-weight: bold;
   margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+.username:hover {
+  color: #ff8a31;
+}
+
+
+.highlight {
+  color: #ff7c17;
+  font-weight: bold;
+  margin-top: 20px;
+
+}
+
 
 .cards .card-info .follow{
   display: flex;
@@ -162,6 +178,7 @@ input .success{
   padding: 20px;
   border-radius: 25px;
   width: 700px;
+  height: auto;
 }
 
 #repo-title {
@@ -172,6 +189,7 @@ input .success{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  height: auto;
   margin-top: 20px;
 }
 
@@ -200,6 +218,7 @@ footer {
   align-items: center;
   justify-content: center;
   bottom: 0;
+  position: fixed;
   width: 100%;
   height: 70px;
   margin-top: 1px;
