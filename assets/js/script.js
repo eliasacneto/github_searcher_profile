@@ -61,10 +61,17 @@ function repos() {
       return responseR.json();
     })
     .then(function (dataR) {
+      clearRepo()
       let userRepo = document.getElementById("userRepo");
 
       for (i = 0; i < dataR.length; i++) {
         userRepo.innerHTML += `<div class="repo"> <a id="link${i}" href="${dataR[i].html_url}" target="_blank">${dataR[i].name}</a> </div>`;
       }
     });
+}
+
+function clearRepo(){
+  document.getElementById("userRepo").innerHTML = "";
+
+  
 }
