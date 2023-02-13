@@ -37,8 +37,6 @@ function searchUser() {
         username2.innerHTML = `<a class="username" href="https://github.com/${data.login}" target="_blank"> @${data.login}</a>`;
         followers.innerHTML = data.followers;
         following.innerHTML = data.following;
-
-
       });
 
     repos();

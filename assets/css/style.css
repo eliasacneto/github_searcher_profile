@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@ body {
   background-color: #22272e;
   font-family: "Inter", sans-serif;
 }
+
 /* Nav section*/
 nav {
   color: #fff;
@@ -17,7 +19,7 @@ nav {
   justify-content: center;
   height: 70px;
 
-width: 100%;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 26px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -36,6 +38,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 /* Search section*/
 .search {
   display: flex;
@@ -44,6 +47,7 @@ main {
   justify-content: center;
   margin-top: 50px;
 }
+
 #searchTitle {
   color: #fff;
   font-size: 20px;
@@ -64,7 +68,7 @@ main {
   background-color: #d9d9d9;
 }
 
-input .success{
+input .success {
   border: 3px solid #4ECA64;
 }
 
@@ -89,6 +93,7 @@ input .success{
 #refresh {
   cursor: pointer;
 }
+
 #refresh:hover {
   cursor: pointer;
   box-shadow: rgba(202, 202, 208, 0.2) 0px 7px 29px 0px;
@@ -103,6 +108,7 @@ input .success{
   margin-left: 20px;
   margin-right: 20px;
 }
+
 .card-info {
   display: flex;
   flex-direction: column;
@@ -126,15 +132,17 @@ input .success{
 .card-info ul {
   list-style: none;
 }
+
 .card-info ul li {
   margin: 15px;
 }
 
-#bio{
+#bio {
   width: 15em;
   word-wrap: break-word;
 
 }
+
 .username {
   color: #ff7c17;
   font-weight: bold;
@@ -148,7 +156,7 @@ input .success{
 }
 
 
-.username a{
+.username a {
   color: #ff7c17;
   font-weight: bold;
   margin-top: 20px;
@@ -170,7 +178,7 @@ input .success{
 }
 
 
-.cards .card-info .follow{
+.cards .card-info .follow {
   display: flex;
   gap: 15px;
   margin-top: 20px;
@@ -242,6 +250,7 @@ footer a {
   text-decoration: none;
   font-weight: bold;
 }
+
 footer a:hover {
   color: #ff8a31;
 }
