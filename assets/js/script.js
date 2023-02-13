@@ -24,7 +24,6 @@ function searchUser() {
       .then(function (data) {
         let avatar = document.getElementById("avatar");
         let name = document.getElementById("name");
-        let public_repos = document.getElementById("public_repos");
         let bio = document.getElementById("bio");
         let username = document.getElementById("username");
         let username2 = document.getElementById("username2");
@@ -34,7 +33,6 @@ function searchUser() {
         avatar.innerHTML = `<img class="avatar" src="${data.avatar_url}" width="150px" />`;
         name.innerHTML = `<b>${data.name}</b>`;
         bio.innerHTML = data.bio;
-        public_repos.innerHTML = data.public_repos;
         username.innerHTML = `<a class="username" href="https://github.com/${data.login}" target="_blank"> @${data.login}</a>`;
         username2.innerHTML = `<a class="username" href="https://github.com/${data.login}" target="_blank"> @${data.login}</a>`;
         followers.innerHTML = data.followers;

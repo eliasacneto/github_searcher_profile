@@ -98,7 +98,7 @@ input .success{
 .cards {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 35px;
   gap: 15px;
   margin-left: 20px;
   margin-right: 20px;
@@ -135,8 +135,20 @@ input .success{
   word-wrap: break-word;
 
 }
-
 .username {
+  color: #ff7c17;
+  font-weight: bold;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.username:hover {
+  color: #ff8a31;
+  text-decoration: none;
+}
+
+
+.username a{
   color: #ff7c17;
   font-weight: bold;
   margin-top: 20px;
@@ -144,8 +156,9 @@ input .success{
   cursor: pointer;
 }
 
-.username:hover {
+.username a:hover {
   color: #ff8a31;
+  text-decoration: none;
 }
 
 
@@ -220,7 +233,7 @@ footer {
   bottom: 0;
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 50px;
   margin-top: 1px;
 }
 
