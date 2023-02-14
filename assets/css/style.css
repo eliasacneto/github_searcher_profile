@@ -62,19 +62,29 @@ main {
 
 }
 
-.search-input input {
+input {
   height: 35px;
   width: 250px;
   border-radius: 10px;
   margin-right: 5px;
-  background-color: #d9d9d9;
+  background-color: #2c333b;
   text-align: center;
-  
+  border: .5px solid #ff7c17;
+  color: #FFF;
 }
 
-input .success {
-  border: 3px solid #4ECA64;
+input:focus
+{
+  color: #FFF;
+  background-color: #2c333b;
+  outline-color: rgb(255, 124, 23);
+  box-shadow: rgb(255, 124, 23) 3px, 3px,  15px;
+  -webkit-box-shadow: rgb(255, 124, 23) 30px, 30px,  50px;
+  transition: .1s;
+  border:  rgb(255, 124, 23) 3px, 3px,  15px;
+  transition-property: box-shadow; 
 }
+
 
 .search-button {
   color: #fff;
@@ -91,7 +101,8 @@ input .success {
 
 .search-button:hover {
   background-color: #ff8a31;
-  box-shadow: rgba(202, 202, 208, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(252, 105, 0, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #refresh {
@@ -100,7 +111,8 @@ input .success {
 
 #refresh:hover {
   cursor: pointer;
-  box-shadow: rgba(202, 202, 208, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(252, 105, 0, 0.439) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .control-buttons{
@@ -307,7 +319,7 @@ footer a:hover {
     height: auto;
     color: #d9d9d9;
     background-color: #2c333b;
-    box-shadow: rgba(255, 106, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(147, 93, 54, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     padding: 10px 15px 15px 15px;
     border-radius: 25px;
   }
@@ -320,7 +332,7 @@ footer a:hover {
     flex-wrap: wrap;
     color: #d9d9d9;
     background-color: #2c333b;
-    box-shadow: rgba(255, 106, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(147, 93, 54, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     padding: 20px;
     border-radius: 25px;
     width: 80vw;
