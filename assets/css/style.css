@@ -84,6 +84,9 @@ input:focus
   border:  rgb(255, 124, 23) 3px, 3px,  15px;
   transition-property: box-shadow; 
 }
+.emptyField{
+  color: #ea3636d5;
+}
 
 
 .search-button {

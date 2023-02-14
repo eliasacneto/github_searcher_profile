@@ -12,7 +12,7 @@ function searchUser() {
 
   if (user === "") {
     document.getElementsByName("username")[0].placeholder =
-      "Ops! Type an username first...";
+      "You must type an username...";
   } else {
     let url = `https://api.github.com/users/${user}`;
 
