@@ -30,13 +30,13 @@ function searchUser() {
         let followers = document.getElementById("followers");
         let following = document.getElementById("following");
 
-        avatar.innerHTML = `<img class="avatar" src="${data.avatar_url}" width="150px" />`;
-        name.innerHTML = `<b>${data.name}</b>`;
-        bio.innerHTML = data.bio;
-        username.innerHTML = `<a class="username" href="https://github.com/${data.login}" target="_blank"> @${data.login}</a>`;
-        username2.innerHTML = `<a class="username" href="https://github.com/${data.login}" target="_blank"> @${data.login}</a>`;
-        followers.innerHTML = data.followers;
-        following.innerHTML = data.following;
+        avatar.innerHTML = `<img class="avatar" src="${data.avatar_url ?? './assets/images/github-logo.svg'}" width="150px" />`;
+        name.innerHTML = `<b>${data.name ?? 'User not found'}</b>`;
+        username.innerHTML = `<a class="username" href="https://github.com/${data.login ?? '404'}" target="_blank"> @${data.login ?? '🤷‍♂️'}</a>`;
+        bio.innerHTML = data.bio ?? 'Try searching for another user 🔎';
+        username2.innerHTML = `<a class="username" href="https://github.com/${data.login ?? '404'}" target="_blank"> @${data.login ?? '🤷‍♂️'}</a>`;
+        followers.innerHTML = data.followers ?? '0';
+        following.innerHTML = data.following ?? '0';
       });
 
     repos();
